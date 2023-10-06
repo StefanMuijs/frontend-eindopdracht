@@ -1,12 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DJI</title>
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-    
+    <nav>
+        <div class="siteLogo">
+            <img src="./images/lodge-logo.png" alt="lodge-logo" class="lodgelogo">
+        </div>
+
+        <div class="links">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </div>
+
+    </nav>
+
+    <header>
+        <h1>Lodge Holidays</h1>
+        <p>Een vakantie in een lodge is een droom die uitkomt. Omringd door de prachtige natuur, genieten van knusse
+            avonden bij
+            het haardvuur, en overdag avontuurlijke wandelingen maken. De rustieke charme van de lodge en de
+            onvergetelijke momenten
+            met vrienden en familie maken deze vakantie echt speciaal. Een lodgevakantie is de perfecte ontsnapping aan
+            de drukte
+            van het dagelijkse leven.</p>
+        <div class="header-buttons">
+            <a>Boeken</a>
+            <a>Informatie</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="otherlodges">
+            <h2>Populaire Lodges</h2>
+            <div class="lodges">
+                <article class="lodge">
+                    <img src="./images/lodge2.jpg" alt="lodge2" class="lodgesimages">
+                    <div class="lodge-info">
+
+                        <h3>Japanse Lodge</h3>
+                        <div class="star-rating">
+                            <img src="./images/star-filled.png" alt="star-rating-1" class="star">
+                            <img src="./images/star-filled.png" alt="star-rating-1" class="star">
+                            <img src="./images/star-filled.png" alt="star-rating-1" class="star">
+                            <img src="./images/star-filled.png" alt="star-rating-1" class="star">
+                            <img src="./images/star-filled.png" alt="star-rating-1" class="star">
+                        </div>
+                        <p>Verblijven in een prachtige Japanse lodge is als een betoverende reis naar het land van de
+                            rijzende zon. De serene en
+                            elegante omgeving biedt een diepgaande verbinding met de Japanse cultuur.</p>
+                        <a>Bekijken</a>
+                    </div>
+
+                </article>
+
+                <article class="lodge">
+                    <img src="./images/lodge3.jpg" alt="lodge3" class="lodgesimages">
+                    <div class="lodge-info">
+                        <h3>Alpen Lodge</h3>
+                        <div class="star-rating">
+                            <img src="./images/star-filled.png" alt="star-rating-1" class="star">
+                            <img src="./images/star-filled.png" alt="star-rating-1" class="star">
+                            <img src="./images/star-filled.png" alt="star-rating-1" class="star">
+                            <img src="./images/star-empty.png" alt="star-rating-1" class="star">
+                            <img src="./images/star-empty.png" alt="star-rating-1" class="star">
+                        </div>
+                        <p>Geniet van heerlijke alpine gerechten en ontspan in de rustige omgeving. Een verblijf in een
+                            Alpenlodge belooft de
+                            perfecte balans tussen natuurlijke schoonheid en gezelligheid.</p>
+                        <a>Bekijken</a>
+                    </div>
+
+                </article>
+
+                <article class="lodge">
+                    <img src="./images/lodge4.jpg" alt="lodge4" class="lodgesimages">
+                    <div class="lodge-info">
+                        <h3>Winter Lodge</h3>
+                        <div class="star-rating">
+                            <img src="./images/star-filled.png" alt="star-rating-1" class="star">
+                            <img src="./images/star-filled.png" alt="star-rating-1" class="star">
+                            <img src="./images/star-filled.png" alt="star-rating-1" class="star">
+                            <img src="./images/star-filled.png" alt="star-rating-1" class="star">
+                            <img src="./images/star-empty.png" alt="star-rating-1" class="star">
+                        </div>
+                        <p>Een verblijf in een prachtige winter lodge is als een sprookje dat tot leven komt. Omringd
+                            door een betoverend
+                            sneeuwlandschap biedt de lodge warmte en comfort na een dag vol winterse avonturen.</p>
+                        <a>Bekijken</a>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+
+        <section class="form">
+            <h4>Contact Fomulier</h4>
+            <form>
+                <div class="formfield-two">
+                    <div class="formfield">
+                        <label for="firstname">Voornaam</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Voornaam" required>
+                    </div>
+
+                    <div class="formfield">
+                        <label for="lastname">Achternaam</label>
+                        <input type="text" name="lastname" id="lasttname" placeholder="Achternaam" required>
+                    </div>
+                </div>
+
+                <div class="formfield">
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" name="e-mail" id="e-mail" placeholder="Voer e-mail adres in..." required>
+
+                </div>
+
+                <div class="formfield-two">
+                    <div class="formfield">
+                        <label for="woonplaats">Woonplaats</label>
+                        <input type="text" name="woonplaats" id="woonplaats" placeholder="Voer woonplaats in..."
+                            required>
+                    </div>
+                    <div class="formfield">
+                        <label for="birthday">Geboortedatum</label>
+                        <input type="date" name="geboortedatum" id="birthday" required>
+                    </div>
+                </div>
+
+                <div class="formfield">
+                    <label for="subject">Lodge</label>
+                    <select name="subject" id="subject" placeholder="kies docent" required>
+                        <option value="" disabled selected>Kies lodge</option>
+                        <option value="Antwan">Japanse Lodge</option>
+                        <option value="Bas">Ardenne Lodge</option>
+                        <option value="Erik">Winter Lodge</option>
+                    </select>
+                </div>
+
+                <div class="formfield">
+                    <label for="message">Bericht</label>
+                    <textarea name="message" rows="7" id="message"></textarea>
+                </div>
+
+                <label>Inschrijven voor nieuwsbrief?</label>
+
+                <div class="newsletter">
+                    <input type="radio" id="yes" name="ja" value="yes" required>
+                    <label for="yes">Ja</label>
+
+                    <input type="radio" id="no" name="nee" value="No">
+                    <label for="no">No</label>
+                </div>
+
+
+                <div class="agreement">
+                    <input type="checkbox" id="agreement" name="agreement" value="agreement" required>
+                    <label for="agreement">Ik ga akkoord met de algemene voorwaarden</label>
+                </div>
+
+                <button type="submit">Verstuur bericht</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <img src="./images/lodge-logo-white.png" alt="lodge-logo" class="lodgelogo">
+        <div class="footertekst">
+            <p>copyright 2023 LodgeGo</p>
+            <div class="footerlinks">
+
+                <a href="#" class="footerlink">Privacyverklaring</a>
+                <a href="#" class="footerlink">Algemene voorwaarden</a>
+                <a href="#" class="footerlink">Cookiebeleid</a>
+                <a href="#" class="footerlink">Contact</a>
+            </div>
+        </div>
+        <div class="socials">
+            <img src="./images/facebooklogo.png" alt="facebooklogo" class="socialslogo">
+            <img src="./images/instalogo.png" alt="instalogo" class="socialslogo">
+            <img src="./images/snapchatlogo.png" alt="snapchatlogo" class="socialslogo">
+        </div>
+
+
+
+    </footer>
 </body>
+
 </html>
