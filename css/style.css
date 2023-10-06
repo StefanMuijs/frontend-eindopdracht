@@ -89,7 +89,7 @@ header p {
 }
 
 .header-buttons a {
-    background-color: none;
+    background-color: rgb(192, 125, 25);
     color: white;
     padding: 10px 50px;
     gap: 10px;
@@ -98,7 +98,7 @@ header p {
 }
 
 .header-buttons a:hover {
-    background-color: rgb(192, 125, 25);
+    background-color: rgb(241, 188, 108);
 }
 
 /* hier komt alles van section 2 */
@@ -150,6 +150,7 @@ h2 {
     flex-direction: column;
     justify-content: space-evenly;
     height: 40vh;
+    flex: 1;
 }
 
 .lodge-info a {
