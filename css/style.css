@@ -9,7 +9,9 @@ body {
 
 }
 
-
+a {
+    text-decoration: none;
+}
 
 
 /* Hier is alles in de nav */
@@ -22,6 +24,7 @@ nav {
     position: sticky;
     top: 0;
     background-color: white;
+    z-index: 1;
 }
 
 .links {
@@ -30,7 +33,6 @@ nav {
 }
 
 nav a {
-    text-decoration: none;
     color: rgb(192, 125, 25);
     padding: 5px 10px;
     border-radius: 5px;
@@ -38,8 +40,6 @@ nav a {
 }
 
 nav a:hover {
-    /* color: white; */
-    /* background-color: rgb(192, 125, 25); */
     border-bottom: solid 2px rgb(192, 125, 25);
 }
 
@@ -52,7 +52,7 @@ nav a:hover {
 /* Hier is alles in de header */
 h1 {
     font-weight: 700;
-    font-size: 3em;
+    font-size: 3rem;
     color: white;
 }
 
@@ -76,7 +76,7 @@ header {
 }
 
 header p {
-    font-size: 1em;
+    font-size: 1rem;
     color: white;
     max-width: 60vw;
     text-align: center;
@@ -98,18 +98,19 @@ header p {
 }
 
 .header-buttons a:hover {
-    background-color: rgb(241, 188, 108);
+    background-color: rgb(209, 146, 52);
 }
+
 
 /* hier komt alles van section 2 */
 h2 {
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 700;
     color: rgb(192, 125, 25);
 }
 
 
-.otherlodges {
+.populaire-lodges {
     display: flex;
     align-items: center;
     margin-top: 80px;
@@ -186,7 +187,7 @@ h4 {
     padding-top: 50px;
     padding-bottom: 50px;
     flex-direction: column;
-    padding: 100px 70px;
+    padding: 80px 50px;
 }
 
 form {
@@ -211,13 +212,13 @@ form {
 label {
     color: rgb(192, 125, 25);
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 
 input,
 select,
 textarea {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     padding: 10px;
     border-radius: 5px;
     border: solid 2px rgb(192, 125, 25);
@@ -228,10 +229,14 @@ form button {
     font-size: 1rem;
     border-radius: 5px;
     background-color: rgb(192, 125, 25);
-    border: 0;
+    border: solid 3px rgb(192, 125, 25);
     color: white;
     height: 50px;
     font-weight: bold;
+}
+
+form button:hover {
+    background-color: rgb(209, 146, 52);
 }
 
 input:valid,
@@ -287,6 +292,7 @@ footer p {
 
 /* Hier alles om te scalen naar telefoon */
 @media (width <=480px) {
+
     nav {
         flex-direction: column;
         gap: 10px;
@@ -301,6 +307,10 @@ footer p {
     .links {
         flex-direction: column;
         gap: 10px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
     }
 
     .lodges {

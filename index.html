@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LodgeVacation</title>
+    <title>LodgeHolidays</title>
     <link rel="stylesheet" href="./css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,16 +21,16 @@
         </div>
 
         <div class="links">
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
+            <a href="#home">Home</a>
+            <a href="#populaire-lodges">populaire lodges</a>
+            <a href="#contact">Contact</a>
             <a href="#">Link</a>
             <a href="#">Link</a>
         </div>
 
     </nav>
 
-    <header>
+    <header id="home">
         <h1>Lodge Holidays</h1>
         <p>Een vakantie in een lodge is een droom die uitkomt. Omringd door de prachtige natuur, genieten van knusse
             avonden bij
@@ -40,13 +40,13 @@
             de drukte
             van het dagelijkse leven.</p>
         <div class="header-buttons">
-            <a>Boeken</a>
-            <a>Informatie</a>
+            <a href="#populaire-lodges">Boeken</a>
+            <a href="#contact">Informatie</a>
         </div>
     </header>
 
     <main>
-        <section class="otherlodges">
+        <section class="populaire-lodges" id="populaire-lodges">
             <h2>Populaire Lodges</h2>
             <div class="lodges">
                 <article class="lodge">
@@ -64,7 +64,8 @@
                         <p>Verblijven in een prachtige Japanse lodge is als een betoverende reis naar het land van de
                             rijzende zon. De serene en
                             elegante omgeving biedt een diepgaande verbinding met de Japanse cultuur.</p>
-                        <a>Bekijken</a>
+                        <a
+                            href="https://www.booking.com/hotel/jp/yakushima-umi-no-cottage-tida.nl.html?aid=356980&label=gog235jc-1FCAIYiwQodTgISDNYA2ipAYgBAZgBHLgBF8gBDNgBAegBAfgBDYgCAagCA7gCto2BqQbAAgHSAiRiNjI5ZDcwNC03OTY5LTQyNzEtODNmZi03YTgyMDU3MWJmNTTYAgbgAgE&sid=143b19668c8cfc658e53d12e34ac1aa6">Bekijken</a>
                     </div>
 
                 </article>
@@ -83,7 +84,8 @@
                         <p>Geniet van heerlijke alpine gerechten en ontspan in de rustige omgeving. Een verblijf in een
                             Alpenlodge belooft de
                             perfecte balans tussen natuurlijke schoonheid en gezelligheid.</p>
-                        <a>Bekijken</a>
+                        <a
+                            href="https://www.airbnb.nl/s/homes?omni_page_id=36021&map_toggle=true&superhost=true&dynamic_product_ids%5B%5D=701805239018413500&room_types%5B%5D=Entire+home%2Fapt&category_tag=Tag%3A8661&checkin=2023-10-15&checkout=2023-10-20&date_picker_type=calendar&lat=46.94385855726582&lng=14.703762288360593&place_id=ChIJC6kmQYy5b0cR06RjPlYKzAQ">Bekijken</a>
                     </div>
 
                 </article>
@@ -102,14 +104,15 @@
                         <p>Een verblijf in een prachtige winter lodge is als een sprookje dat tot leven komt. Omringd
                             door een betoverend
                             sneeuwlandschap biedt de lodge warmte en comfort na een dag vol winterse avonturen.</p>
-                        <a>Bekijken</a>
+                        <a
+                            href="https://www.chalet.nl/oostenrijk/skicircus-saalbach-hinterglemm-leogang-fieberbrunn/leogang/andrea-o11719?back=https%3A%2F%2Fwww.chalet.nl%2Fzoek%252Den%252Dboek%3Fc%255B0%255D%3D2%26gclid%3DCjwKCAjw4P6oBhBsEiwAKYVkq5WkEzLwrvoMjM5etIqUtfxud9tv4wHbAKNCb5iJ2LRKSAaSpMpSnRoCYIYQAvD_BwE">Bekijken</a>
                     </div>
 
                 </article>
             </div>
         </section>
 
-        <section class="form">
+        <section class="form" id="contact">
             <h4>Contact Fomulier</h4>
             <form>
                 <div class="formfield-two">
@@ -160,10 +163,10 @@
                 <label>Inschrijven voor nieuwsbrief?</label>
 
                 <div class="newsletter">
-                    <input type="radio" id="yes" name="ja" value="yes" required>
+                    <input type="radio" id="yes" name="option" value="yes" required>
                     <label for="yes">Ja</label>
 
-                    <input type="radio" id="no" name="nee" value="No">
+                    <input type="radio" id="no" name="option" value="No">
                     <label for="no">No</label>
                 </div>
 
@@ -188,7 +191,7 @@
                 <a href="#" class="footerlink">Privacyverklaring</a>
                 <a href="#" class="footerlink">Algemene voorwaarden</a>
                 <a href="#" class="footerlink">Cookiebeleid</a>
-                <a href="#" class="footerlink">Contact</a>
+                <a href="#contact" class="footerlink">Contact</a>
             </div>
         </div>
         <div class="socials">
