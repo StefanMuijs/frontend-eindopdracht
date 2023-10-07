@@ -79,8 +79,13 @@ header {
 header p {
     font-size: 1rem;
     color: white;
-    max-width: 60vw;
+    max-width: 55vw;
     text-align: center;
+}
+
+header span {
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .header-buttons {
@@ -102,7 +107,6 @@ header p {
     background-color: rgb(209, 146, 52);
 }
 
-
 /* hier komt alles van section 2 */
 h2 {
     font-size: 3rem;
@@ -118,11 +122,19 @@ h2 {
     flex-direction: column;
 }
 
+#populaire-lodges hr {
+    border: solid 2px;
+    border-radius: 5px;
+    color: rgb(192, 125, 25);
+    width: 50%;
+}
+
 .lodges {
     display: flex;
     gap: 20px;
     border-radius: 5px;
     max-width: 60vw;
+    margin: 3vh;
 }
 
 .lodge {
