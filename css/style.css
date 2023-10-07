@@ -16,7 +16,7 @@ a {
 
 /* Hier is alles in de nav */
 nav {
-    padding: 10px 40px 10px 70px;
+    padding: 10px 4vw;
     border-bottom: 2px solid rgb(192, 125, 25);
     display: flex;
     align-items: center;
@@ -114,8 +114,7 @@ h2 {
 #populaire-lodges {
     display: flex;
     align-items: center;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin: 7vh 0;
     flex-direction: column;
 }
 
@@ -133,6 +132,7 @@ h2 {
     display: flex;
     flex-direction: column;
     min-height: 70vh;
+    transition: ease-in-out 0.3s;
 }
 
 .lodge:hover {
@@ -189,7 +189,7 @@ h4 {
     padding-top: 50px;
     padding-bottom: 50px;
     flex-direction: column;
-    padding: 80px 50px;
+    padding: 5vh 0;
 }
 
 form {
@@ -199,27 +199,27 @@ form {
 
 }
 
-.formfield {
+form .formfield {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 5px;
 }
 
-.formfield-two {
+form .formfield-two {
     display: flex;
     gap: 20px
 }
 
-label {
+form label {
     color: rgb(192, 125, 25);
     font-weight: bold;
     font-size: 0.9rem;
 }
 
-input,
-select,
-textarea {
+form input,
+form select,
+form textarea {
     font-size: 0.9rem;
     padding: 10px;
     border-radius: 5px;
@@ -254,10 +254,15 @@ input:invalid:not(:placeholder-shown) {
     border: solid 2px red;
 }
 
+form p {
+    color: white;
+    text-align: center;
+}
+
 /* Hier is alles van de footer */
 footer {
     background-color: rgb(192, 125, 25);
-    padding: 50px 70px;
+    padding: 50px 4vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -280,13 +285,19 @@ footer p {
     gap: 20px;
 }
 
-.socials {
+footer .socials {
     display: flex;
     gap: 10px;
 }
 
-.socialslogo {
+footer .socialslogo {
     width: 30px;
+}
+
+footer p,
+footer a {
+    font-weight: 300;
+    font-size: 0.8rem;
 }
 
 
@@ -299,7 +310,6 @@ footer p {
         flex-direction: column;
         gap: 10px;
         position: relative;
-        padding: 20px 70px 20px 70px;
     }
 
     .links {
