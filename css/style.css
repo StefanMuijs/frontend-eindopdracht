@@ -131,7 +131,7 @@ h2 {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    min-height: 70vh;
+    min-height: 60vh;
     transition: ease-in-out 0.3s;
 }
 
@@ -172,7 +172,7 @@ h2 {
 
 
 .star {
-    width: 13%;
+    width: 10%;
 }
 
 /* Hier komt alles van het formulier */
